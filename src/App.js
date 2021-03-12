@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './pages/Homepage/Home';
 import Kategori from './pages/Kategori/Kategori';
+import Home from './pages/Homepage/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import UjiCoba from './pages/UjiCoba/UjiCoba';

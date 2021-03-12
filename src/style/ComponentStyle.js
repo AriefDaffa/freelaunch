@@ -125,7 +125,7 @@ export const Button = styled.button`
 		padding: 0 1em;
 	}
 `;
-
+//
 export const DivPseudo = styled.div`
 	display: flex;
 	width: fit-content;

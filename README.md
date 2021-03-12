@@ -7,4 +7,4 @@ Project Intern BCC 2021
 - Website ini dibuat menggunakan React JS + Styled Components
 - Beberapa pages sudah responsive
 - Homepage dipecah menjadi beberapa section
-- ComponentStyle berisi Component Global seperti Wrapper, Container, dll.
+- ComponentStyle berisi Component Global seperti Wrapper, Container, dll
