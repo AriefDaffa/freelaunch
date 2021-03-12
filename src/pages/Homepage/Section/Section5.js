@@ -26,55 +26,60 @@ const Section5 = () => {
 					Freelancer Indonesia
 					<br /> dalam Genggaman Anda
 				</Text>
-				<Container flexDirection="column" alignItems="left">
-					<DivPseudo content={bubble1}>
-						<Text
-							sizeLarge="1em"
-							sizeMedium="1em"
-							sizeSmall="1em"
-							textAlign="left"
-						>
-							Cari di kategori atau di kolom search freelancer yang Anda
-							inginkan. Kemudian pilih berdasarkan portofolio dan ulasan.
-						</Text>
-					</DivPseudo>
-					<DivPseudo content={bubble2}>
-						<Text
-							sizeLarge="1em"
-							sizeMedium="1em"
-							sizeSmall="1em"
-							textAlign="left"
-						>
-							Klik tombol “Chat Freelancer” pada sebelah kanan halaman profil
-							freelancer kemudian jelaskan detail pekerjaan dan tawarkan harga.
-						</Text>
-					</DivPseudo>
-					<DivPseudo content={bubble3}>
-						<Text
-							sizeLarge="1em"
-							sizeMedium="1em"
-							sizeSmall="1em"
-							textAlign="left"
-						>
-							Apabila penawaran harga sudah disetujui kedua belah pihak maka
-							tunggu freelancer menyalakan tombol “Bayar” yang ada di sebelah
-							kanan halaman chat. Apabila tombol sudah aktif, lakukan pembayaran
-							melalui Freelaunch.
-						</Text>
-					</DivPseudo>
-					<DivPseudo content={bubble4}>
-						<Text
-							sizeLarge="1em"
-							sizeMedium="1em"
-							sizeSmall="1em"
-							textAlign="left"
-						>
-							Pantau perkembangan pekerjaan freelancer melalui dashboard Anda.
-							Jika pekerjaan sudah 100%, setujui hasil karya freelancer dengan
-							menekan tombol “Setujui Pekerjaan” pada dashboard dan berikan
-							review mengenai kerjanya.
-						</Text>
-					</DivPseudo>
+				<Container alignItems="left" flexMobile="column">
+					<Container flexDirection="column">
+						<DivPseudo content={bubble1} height="fit-content">
+							<Text
+								sizeLarge="1em"
+								sizeMedium="1em"
+								sizeSmall="1em"
+								textAlign="left"
+							>
+								Cari di kategori atau di kolom search freelancer yang Anda
+								inginkan. Kemudian pilih berdasarkan portofolio dan ulasan.
+							</Text>
+						</DivPseudo>
+						<DivPseudo content={bubble2} height="fit-content">
+							<Text
+								sizeLarge="1em"
+								sizeMedium="1em"
+								sizeSmall="1em"
+								textAlign="left"
+							>
+								Klik tombol “Chat Freelancer” pada sebelah kanan halaman profil
+								freelancer kemudian jelaskan detail pekerjaan dan tawarkan
+								harga.
+							</Text>
+						</DivPseudo>
+					</Container>
+					<Container flexDirection="column">
+						<DivPseudo content={bubble3} height="fit-content">
+							<Text
+								sizeLarge="1em"
+								sizeMedium="1em"
+								sizeSmall="1em"
+								textAlign="left"
+							>
+								Apabila penawaran harga sudah disetujui kedua belah pihak maka
+								tunggu freelancer menyalakan tombol “Bayar” yang ada di sebelah
+								kanan halaman chat. Apabila tombol sudah aktif, lakukan
+								pembayaran melalui Freelaunch.
+							</Text>
+						</DivPseudo>
+						<DivPseudo content={bubble4} height="fit-content">
+							<Text
+								sizeLarge="1em"
+								sizeMedium="1em"
+								sizeSmall="1em"
+								textAlign="left"
+							>
+								Pantau perkembangan pekerjaan freelancer melalui dashboard Anda.
+								Jika pekerjaan sudah 100%, setujui hasil karya freelancer dengan
+								menekan tombol “Setujui Pekerjaan” pada dashboard dan berikan
+								review mengenai kerjanya.
+							</Text>
+						</DivPseudo>
+					</Container>
 				</Container>
 			</Container>
 		</Section>

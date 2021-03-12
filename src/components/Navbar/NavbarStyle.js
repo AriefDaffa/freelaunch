@@ -15,7 +15,7 @@ export const NavContainer = styled.div`
 	margin-top: 90px;
 
 	@media ${maxDevice.tablet} {
-		justify-content: center;
+		justify-content: space-space-evenly;
 	}
 
 	@media ${maxDevice.laptop} {
@@ -57,5 +57,12 @@ export const NavItem = styled(Link)`
 
 	@media ${maxDevice.laptop} {
 		margin: 0 1em;
+	}
+`;
+
+export const BurgerKing = styled.div`
+	height: fit-fit-content;
+	@media ${minDevice.tablet} {
+		display: none;
 	}
 `;

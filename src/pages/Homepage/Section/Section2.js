@@ -1,5 +1,8 @@
 import React from 'react';
-import { Card, CardContainer } from '../../../components/StaticCard/StaticCard';
+import {
+	CardStatic,
+	CardContainer,
+} from '../../../components/StaticCard/StaticCard';
 import {
 	Button,
 	Container,
@@ -12,6 +15,7 @@ import webCard from '../../../images/vector/website.svg';
 import fotoCard from '../../../images/vector/foto.svg';
 import penerjemahCard from '../../../images/vector/penerjemah.svg';
 import desainCard from '../../../images/vector/desain.svg';
+import { Link } from 'react-router-dom';
 
 const Section2 = () => {
 	return (
@@ -26,18 +30,28 @@ const Section2 = () => {
 					Kategori Populer
 				</Text>
 				<CardContainer>
-					<Card image={webCard}>Website</Card>
-					<Card image={fotoCard}>Foto & Visual</Card>
-					<Card image={penerjemahCard}>Penerjemahan</Card>
-					<Card image={desainCard}>Desain Grafis</Card>
+					<CardStatic image={webCard}>Website</CardStatic>
+					<CardStatic image={fotoCard}>Foto & Visual</CardStatic>
+					<CardStatic image={penerjemahCard}>Penerjemahan</CardStatic>
+					<CardStatic image={desainCard}>Desain Grafis</CardStatic>
 				</CardContainer>
 				<Button
 					backgroundColor="#2700d9"
 					color="white"
 					radius="5px"
-					padding="0 4em"
+					padding="0"
 				>
-					Eksplor Kategori
+					<Link
+						style={{
+							textDecoration: 'none',
+							color: 'white',
+							backgroundColor: '#2700d9',
+							padding: '0 4em',
+						}}
+						to="/kategori"
+					>
+						Eksplor Kategori
+					</Link>
 				</Button>
 			</Container>
 		</Section>

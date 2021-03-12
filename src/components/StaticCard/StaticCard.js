@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
 	}
 `;
 
-export const Card = styled.div`
+export const CardStatic = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -55,11 +55,11 @@ const TextCard = styled.p`
 const StaticCard = (props) => {
 	return (
 		<CardContainer flexDirection="row">
-			<Card width="300px" height="350px" BackgroundColor="#252836">
+			<CardStatic width="300px" height="350px" BackgroundColor="#252836">
 				<StaticImg src={props.image} />
 				<TextCard weight="bold">{props.title}</TextCard>
 				<TextCard>{props.body}</TextCard>
-			</Card>
+			</CardStatic>
 		</CardContainer>
 	);
 };

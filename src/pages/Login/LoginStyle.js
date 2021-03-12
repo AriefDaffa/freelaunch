@@ -22,6 +22,7 @@ export const FormInput = styled.input`
 	width: 100%;
 	color: ${color.gray1};
 	font-size: 1em;
+	outline: none;
 `;
 
 export const FormButton = styled.button`

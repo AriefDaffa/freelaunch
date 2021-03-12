@@ -35,9 +35,13 @@ export const Container = styled.div`
 	padding: ${(props) => props.padding};
 	flex-direction: ${(props) => props.flexDirection || 'row'};
 	height: ${(props) => props.height};
+	width: ${(props) => props.width};
 
 	@media ${maxDevice.tablet} {
 		flex-direction: ${(props) => props.flexMobile};
+	}
+	@media ${maxDevice.laptop} {
+		display: ${(props) => props.displayMobile};
 	}
 `;
 
@@ -54,12 +58,14 @@ export const Images = styled.img.attrs((props) => ({
 `;
 
 export const Text = styled.p`
-	color: ${color.white};
+	color: ${(props) => props.color || color.white};
 	font-weight: ${(props) => props.fontWeight};
 	text-align: ${(props) => props.textAlign || 'center'};
 	font-size: ${(props) => props.sizeLarge};
-	padding: 1em 0;
+	padding: ${(props) => props.padding || '1em 0'};
 	width: fit-content;
+	height: ${(props) => props.height};
+	background-color: ${(props) => props.backgroundColor};
 
 	@media ${maxDevice.tablet} {
 		font-size: ${(props) => props.sizeMedium};
@@ -126,12 +132,17 @@ export const DivPseudo = styled.div`
 	align-items: ${(props) => props.align || 'center'};
 	background-color: ${(props) => props.backgroundColor};
 	margin: ${(props) => props.margin};
-	border-radius: 10px;
-	height: 70px;
+	border-radius: ${(props) => props.borderRadius || '10px'};
+	height: ${(props) => props.height || '70px'};
 	padding-top: 0.6em;
 
 	&::before {
 		content: url(${(props) => props.content});
+		margin: 0 1em;
+	}
+
+	&::after {
+		content: url(${(props) => props.contentAfter});
 		margin: 0 1em;
 	}
 `;

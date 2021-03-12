@@ -9,6 +9,7 @@ import {
 
 //import images
 import karyaMereka from '../../../images/vector/karya-mereka.svg';
+import { Link } from 'react-router-dom';
 
 const Section6 = () => {
 	return (
@@ -31,9 +32,19 @@ const Section6 = () => {
 					backgroundColor="#2700d9"
 					color="white"
 					radius="5px"
-					padding="0 4em"
+					padding="0"
 				>
-					Uji Coba
+					<Link
+						style={{
+							textDecoration: 'none',
+							color: 'white',
+							backgroundColor: '#2700d9',
+							padding: '0 4em',
+						}}
+						to="/uji-coba"
+					>
+						Uji Coba
+					</Link>
 				</Button>
 			</Container>
 		</Section>
